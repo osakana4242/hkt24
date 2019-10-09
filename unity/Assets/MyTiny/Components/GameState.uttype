@@ -24,6 +24,14 @@
         "EditorOnly": false,
         "Versioned": true
     }, {
+        "Id": "1e1ff9ad5c414ba9b7de5352ff6c6f8a",
+        "Name": "MainInit",
+        "FieldType": { "Id": "9633c95a0a68473682f09ed6a01194b4", "Name": "Int32" },
+        "Array": false,
+        "Visibility": 0,
+        "EditorOnly": false,
+        "Versioned": true
+    }, {
         "Id": "38bfb63e43ef46ecaf94edb82fbac43c",
         "Name": "Main",
         "FieldType": { "Id": "9633c95a0a68473682f09ed6a01194b4", "Name": "Int32" },
@@ -44,8 +52,9 @@
         "Type": { "Id": "27fe569d06c04a2faa286cb6b595fbeb", "Name": "GameState" },
         "Properties": {
             "Title": 1,
-            "Main": 2,
-            "Result": 3
+            "MainInit": 2,
+            "Main": 3,
+            "Result": 4
         }
     }
 }]

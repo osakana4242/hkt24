@@ -21,8 +21,14 @@ namespace game {
             let config = world.getConfigData(game.GameConfig);
             // config.currentScore = 0;
             // config.currentScrollSpeed = config.scrollSpeed;
-            config.state = GameState.Main;
+            config.state = GameState.MainInit;
             world.setConfigData(config);
+
+            world.forEach([ut.Core2D.TransformLocalPosition, game.PlyaerBody],
+                (transformLocalPosition, movement) => {
+                    movement.targetPosition = transformLocalPosition.position;
+                });
+
         }
     }
 }

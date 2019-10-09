@@ -6,9 +6,14 @@
     "SerializedVersion": 0,
     "Entities": [
         { "$TypeId": 9, "Id": "0783c124f7bc4ab181b7ed589fe9e71c", "Name": "Camera" },
-        { "$TypeId": 9, "Id": "ccf832daa0444cc58de096f321985db3", "Name": "bg" },
+        { "$TypeId": 9, "Id": "7f4b18c7be13415aa10490bde8f04e75", "Name": "centerTelop" },
         { "$TypeId": 9, "Id": "982cf5fe53004266b053ea1e2b3bfe5c", "Name": "hud" },
-        { "$TypeId": 9, "Id": "7f4b18c7be13415aa10490bde8f04e75", "Name": "centerTelop" }
+        { "$TypeId": 9, "Id": "ccf832daa0444cc58de096f321985db3", "Name": "bg" },
+        { "$TypeId": 9, "Id": "baaf73addb1947cbae4d9938443e7c4c", "Name": "player_body_0" },
+        { "$TypeId": 9, "Id": "3482e5ed0ee245678da1540ac53e80a4", "Name": "player_body_1" },
+        { "$TypeId": 9, "Id": "303a5e4ba75947a0847359ab98fbedca", "Name": "player_body_2" },
+        { "$TypeId": 9, "Id": "a5944f3d05e8490db394a4f24d4119fc", "Name": "player_body_3" },
+        { "$TypeId": 9, "Id": "4e1c64aaf52544499761bc473065a1e3", "Name": "player_body_4" }
     ]
 },
 {
@@ -57,7 +62,106 @@
             "position": {
                 "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
                 "Properties": {
+                    "y": 0,
+                    "z": -1
+                }
+            }
+        }
+    }]
+},
+{
+    "$TypeId": 5,
+    "Id": "7f4b18c7be13415aa10490bde8f04e75",
+    "Name": "centerTelop",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [{
+        "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" },
+        "Properties": {
+            "parent": { "$TypeId": 9, "Id": "0783c124f7bc4ab181b7ed589fe9e71c", "Name": "Camera" }
+        }
+    }, {
+        "Type": { "Id": "617fd26299c944d58b61164e0c9c9353", "Name": "Text2DRenderer" },
+        "Properties": {
+            "style": { "$TypeId": 9, "Id": "7f4b18c7be13415aa10490bde8f04e75", "Name": "hud" },
+            "pivot": {
+                "Type": { "Id": "3abb69286ddfc2d1c617a173c1eeb35d", "Name": "Vector2" },
+                "Properties": {
+                    "x": 0.5,
+                    "y": 0.5
+                }
+            }
+        }
+    }, {
+        "Type": { "Id": "ced0260f12f72499bae7fea4e1df92b7", "Name": "Text2DStyle" },
+        "Properties": {
+            "size": 12
+        }
+    }, {
+        "Type": { "Id": "ebf6e4be1bc00e559ef91e165189cb3e", "Name": "Text2DStyleNativeFont" },
+        "Properties": {
+            "font": { "$TypeId": 9, "Id": "7f4b18c7be13415aa10490bde8f04e75", "Name": "hud" }
+        }
+    }, {
+        "Type": { "Id": "6f5ed9937f81d1780663edc21a6f0da2", "Name": "NativeFont" }
+    }, {
+        "Type": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
+        "Properties": {
+            "position": {
+                "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
+                "Properties": {
+                    "x": 0,
                     "y": 0
+                }
+            }
+        }
+    }]
+},
+{
+    "$TypeId": 5,
+    "Id": "982cf5fe53004266b053ea1e2b3bfe5c",
+    "Name": "hud",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [{
+        "Type": { "Id": "617fd26299c944d58b61164e0c9c9353", "Name": "Text2DRenderer" },
+        "Properties": {
+            "style": { "$TypeId": 9, "Id": "982cf5fe53004266b053ea1e2b3bfe5c", "Name": "hud" },
+            "pivot": {
+                "Type": { "Id": "3abb69286ddfc2d1c617a173c1eeb35d", "Name": "Vector2" },
+                "Properties": {
+                    "x": 0,
+                    "y": 1
+                }
+            }
+        }
+    }, {
+        "Type": { "Id": "ced0260f12f72499bae7fea4e1df92b7", "Name": "Text2DStyle" },
+        "Properties": {
+            "size": 12
+        }
+    }, {
+        "Type": { "Id": "ebf6e4be1bc00e559ef91e165189cb3e", "Name": "Text2DStyleNativeFont" },
+        "Properties": {
+            "font": { "$TypeId": 9, "Id": "982cf5fe53004266b053ea1e2b3bfe5c", "Name": "hud" }
+        }
+    }, {
+        "Type": { "Id": "6f5ed9937f81d1780663edc21a6f0da2", "Name": "NativeFont" }
+    }, {
+        "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" },
+        "Properties": {
+            "parent": { "$TypeId": 9, "Id": "0783c124f7bc4ab181b7ed589fe9e71c", "Name": "Camera" }
+        }
+    }, {
+        "Type": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
+        "Properties": {
+            "position": {
+                "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
+                "Properties": {
+                    "x": -109.7,
+                    "y": 154
                 }
             }
         }
@@ -96,50 +200,13 @@
         }
     }, {
         "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" }
-    }]
-},
-{
-    "$TypeId": 5,
-    "Id": "982cf5fe53004266b053ea1e2b3bfe5c",
-    "Name": "hud",
-    "Enabled": true,
-    "Static": false,
-    "Layer": 0,
-    "Components": [{
-        "Type": { "Id": "617fd26299c944d58b61164e0c9c9353", "Name": "Text2DRenderer" },
-        "Properties": {
-            "style": { "$TypeId": 9, "Id": "982cf5fe53004266b053ea1e2b3bfe5c", "Name": "hud" },
-            "text": "unko\n\nunko\n\nunko",
-            "pivot": {
-                "Type": { "Id": "3abb69286ddfc2d1c617a173c1eeb35d", "Name": "Vector2" },
-                "Properties": {
-                    "x": 0,
-                    "y": 1
-                }
-            }
-        }
-    }, {
-        "Type": { "Id": "ced0260f12f72499bae7fea4e1df92b7", "Name": "Text2DStyle" },
-        "Properties": {
-            "size": 12
-        }
-    }, {
-        "Type": { "Id": "ebf6e4be1bc00e559ef91e165189cb3e", "Name": "Text2DStyleNativeFont" },
-        "Properties": {
-            "font": { "$TypeId": 9, "Id": "982cf5fe53004266b053ea1e2b3bfe5c", "Name": "hud" }
-        }
-    }, {
-        "Type": { "Id": "6f5ed9937f81d1780663edc21a6f0da2", "Name": "NativeFont" }
-    }, {
-        "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" }
     }, {
         "Type": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
         "Properties": {
             "position": {
                 "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
                 "Properties": {
-                    "x": -109.7,
-                    "y": 154
+                    "z": 1
                 }
             }
         }
@@ -147,48 +214,240 @@
 },
 {
     "$TypeId": 5,
-    "Id": "7f4b18c7be13415aa10490bde8f04e75",
-    "Name": "centerTelop",
+    "Id": "baaf73addb1947cbae4d9938443e7c4c",
+    "Name": "player_body_0",
     "Enabled": true,
     "Static": false,
     "Layer": 0,
     "Components": [{
         "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" }
     }, {
-        "Type": { "Id": "617fd26299c944d58b61164e0c9c9353", "Name": "Text2DRenderer" },
+        "Type": { "Id": "1c504a8a7963db0d32e89b527b90e057", "Name": "Sprite2DRenderer" },
         "Properties": {
-            "style": { "$TypeId": 9, "Id": "7f4b18c7be13415aa10490bde8f04e75", "Name": "hud" },
-            "text": "START",
-            "pivot": {
-                "Type": { "Id": "3abb69286ddfc2d1c617a173c1eeb35d", "Name": "Vector2" },
-                "Properties": {
-                    "x": 0.5,
-                    "y": 0.5
-                }
-            }
+            "sprite": { "$TypeId": 10, "Guid": "3bd79e5be67ddf142bc37fba821abacd", "FileId": 21300000, "Type": 3 }
         }
-    }, {
-        "Type": { "Id": "ced0260f12f72499bae7fea4e1df92b7", "Name": "Text2DStyle" },
-        "Properties": {
-            "size": 12
-        }
-    }, {
-        "Type": { "Id": "ebf6e4be1bc00e559ef91e165189cb3e", "Name": "Text2DStyleNativeFont" },
-        "Properties": {
-            "font": { "$TypeId": 9, "Id": "7f4b18c7be13415aa10490bde8f04e75", "Name": "hud" }
-        }
-    }, {
-        "Type": { "Id": "6f5ed9937f81d1780663edc21a6f0da2", "Name": "NativeFont" }
     }, {
         "Type": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
         "Properties": {
             "position": {
                 "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
                 "Properties": {
-                    "x": 0,
-                    "y": 0
+                    "x": -40,
+                    "y": -60
                 }
             }
+        }
+    }, {
+        "Type": { "Id": "2266a95f5d16ca1ddde710d7c047ba69", "Name": "TransformLocalRotation" },
+        "Properties": {
+            "rotation": {
+                "Type": { "Id": "dc7e11e5d517ed01fd5d084a6c9fd64d", "Name": "Quaternion" },
+                "Properties": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                }
+            }
+        }
+    }, {
+        "Type": { "Id": "be2f221c9af74ec5c0a4495a2d6769a3", "Name": "Sprite2DRendererOptions" },
+        "Properties": {
+            "size": {
+                "Type": { "Id": "3abb69286ddfc2d1c617a173c1eeb35d", "Name": "Vector2" },
+                "Properties": {
+                    "x": 24,
+                    "y": 24
+                }
+            }
+        }
+    }, {
+        "Type": { "Id": "be6ec8d70f3f4b03875ae6af1c40e840", "Name": "PlyaerBody" }
+    }, {
+        "Type": { "Id": "9bc3ef5a2ffd43d0bd6a3091f34d0084", "Name": "Player" }
+    }]
+},
+{
+    "$TypeId": 5,
+    "Id": "3482e5ed0ee245678da1540ac53e80a4",
+    "Name": "player_body_1",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [{
+        "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" }
+    }, {
+        "Type": { "Id": "1c504a8a7963db0d32e89b527b90e057", "Name": "Sprite2DRenderer" },
+        "Properties": {
+            "sprite": { "$TypeId": 10, "Guid": "6f0ebc803fe0cb248acf61051383c10a", "FileId": 21300000, "Type": 3 }
+        }
+    }, {
+        "Type": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
+        "Properties": {
+            "position": {
+                "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
+                "Properties": {
+                    "x": -40,
+                    "y": -70,
+                    "z": 0
+                }
+            }
+        }
+    }, {
+        "Type": { "Id": "be2f221c9af74ec5c0a4495a2d6769a3", "Name": "Sprite2DRendererOptions" },
+        "Properties": {
+            "size": {
+                "Type": { "Id": "3abb69286ddfc2d1c617a173c1eeb35d", "Name": "Vector2" },
+                "Properties": {
+                    "x": 24,
+                    "y": 24
+                }
+            }
+        }
+    }, {
+        "Type": { "Id": "2266a95f5d16ca1ddde710d7c047ba69", "Name": "TransformLocalRotation" }
+    }, {
+        "Type": { "Id": "be6ec8d70f3f4b03875ae6af1c40e840", "Name": "PlyaerBody" },
+        "Properties": {
+            "index": 1
+        }
+    }]
+},
+{
+    "$TypeId": 5,
+    "Id": "303a5e4ba75947a0847359ab98fbedca",
+    "Name": "player_body_2",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [{
+        "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" }
+    }, {
+        "Type": { "Id": "1c504a8a7963db0d32e89b527b90e057", "Name": "Sprite2DRenderer" },
+        "Properties": {
+            "sprite": { "$TypeId": 10, "Guid": "6f0ebc803fe0cb248acf61051383c10a", "FileId": 21300000, "Type": 3 }
+        }
+    }, {
+        "Type": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
+        "Properties": {
+            "position": {
+                "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
+                "Properties": {
+                    "x": -40,
+                    "y": -80,
+                    "z": 0
+                }
+            }
+        }
+    }, {
+        "Type": { "Id": "be2f221c9af74ec5c0a4495a2d6769a3", "Name": "Sprite2DRendererOptions" },
+        "Properties": {
+            "size": {
+                "Type": { "Id": "3abb69286ddfc2d1c617a173c1eeb35d", "Name": "Vector2" },
+                "Properties": {
+                    "x": 24,
+                    "y": 24
+                }
+            }
+        }
+    }, {
+        "Type": { "Id": "2266a95f5d16ca1ddde710d7c047ba69", "Name": "TransformLocalRotation" }
+    }, {
+        "Type": { "Id": "be6ec8d70f3f4b03875ae6af1c40e840", "Name": "PlyaerBody" },
+        "Properties": {
+            "index": 2
+        }
+    }]
+},
+{
+    "$TypeId": 5,
+    "Id": "a5944f3d05e8490db394a4f24d4119fc",
+    "Name": "player_body_3",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [{
+        "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" }
+    }, {
+        "Type": { "Id": "1c504a8a7963db0d32e89b527b90e057", "Name": "Sprite2DRenderer" },
+        "Properties": {
+            "sprite": { "$TypeId": 10, "Guid": "6f0ebc803fe0cb248acf61051383c10a", "FileId": 21300000, "Type": 3 }
+        }
+    }, {
+        "Type": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
+        "Properties": {
+            "position": {
+                "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
+                "Properties": {
+                    "x": -40,
+                    "y": -90,
+                    "z": 0
+                }
+            }
+        }
+    }, {
+        "Type": { "Id": "be2f221c9af74ec5c0a4495a2d6769a3", "Name": "Sprite2DRendererOptions" },
+        "Properties": {
+            "size": {
+                "Type": { "Id": "3abb69286ddfc2d1c617a173c1eeb35d", "Name": "Vector2" },
+                "Properties": {
+                    "x": 24,
+                    "y": 24
+                }
+            }
+        }
+    }, {
+        "Type": { "Id": "2266a95f5d16ca1ddde710d7c047ba69", "Name": "TransformLocalRotation" }
+    }, {
+        "Type": { "Id": "be6ec8d70f3f4b03875ae6af1c40e840", "Name": "PlyaerBody" },
+        "Properties": {
+            "index": 3
+        }
+    }]
+},
+{
+    "$TypeId": 5,
+    "Id": "4e1c64aaf52544499761bc473065a1e3",
+    "Name": "player_body_4",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [{
+        "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" }
+    }, {
+        "Type": { "Id": "1c504a8a7963db0d32e89b527b90e057", "Name": "Sprite2DRenderer" },
+        "Properties": {
+            "sprite": { "$TypeId": 10, "Guid": "6f0ebc803fe0cb248acf61051383c10a", "FileId": 21300000, "Type": 3 }
+        }
+    }, {
+        "Type": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
+        "Properties": {
+            "position": {
+                "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
+                "Properties": {
+                    "x": -40,
+                    "y": -100,
+                    "z": 0
+                }
+            }
+        }
+    }, {
+        "Type": { "Id": "be2f221c9af74ec5c0a4495a2d6769a3", "Name": "Sprite2DRendererOptions" },
+        "Properties": {
+            "size": {
+                "Type": { "Id": "3abb69286ddfc2d1c617a173c1eeb35d", "Name": "Vector2" },
+                "Properties": {
+                    "x": 24,
+                    "y": 24
+                }
+            }
+        }
+    }, {
+        "Type": { "Id": "2266a95f5d16ca1ddde710d7c047ba69", "Name": "TransformLocalRotation" }
+    }, {
+        "Type": { "Id": "be6ec8d70f3f4b03875ae6af1c40e840", "Name": "PlyaerBody" },
+        "Properties": {
+            "index": 4
         }
     }]
 }]

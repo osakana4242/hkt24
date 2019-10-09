@@ -30,17 +30,45 @@
         "Visibility": 0,
         "EditorOnly": false,
         "Versioned": true
+    }, {
+        "Id": "f7d9701b378e4a72b988aed2a8968a43",
+        "Name": "playerSpeed",
+        "FieldType": { "Id": "67325dccf2f047c19c7ef4a045354e67", "Name": "Float32" },
+        "Array": false,
+        "Visibility": 0,
+        "EditorOnly": false,
+        "Versioned": true
+    }, {
+        "Id": "95b6377510b14141b4c57392878763a1",
+        "Name": "playerMoveDistance",
+        "FieldType": { "Id": "67325dccf2f047c19c7ef4a045354e67", "Name": "Float32" },
+        "Array": false,
+        "Visibility": 0,
+        "EditorOnly": false,
+        "Versioned": true
+    }, {
+        "Id": "06a275912f184f4d9dbe446da10352b9",
+        "Name": "stateTime",
+        "FieldType": { "Id": "67325dccf2f047c19c7ef4a045354e67", "Name": "Float32" },
+        "Array": false,
+        "Visibility": 0,
+        "EditorOnly": false,
+        "Versioned": true
+    }, {
+        "Id": "1589baf67490406a9c4d5f316bc09594",
+        "Name": "playerRotationSpeed",
+        "FieldType": { "Id": "67325dccf2f047c19c7ef4a045354e67", "Name": "Float32" },
+        "Array": false,
+        "Visibility": 0,
+        "EditorOnly": false,
+        "Versioned": true
     }],
     "DefaultValue": {
         "Type": { "Id": "164f88b61df14b9bb69ebb3ea39ec2d8", "Name": "GameConfig" },
         "Properties": {
-            "state": {
-                "$TypeId": 8,
-                "Type": { "Id": "27fe569d06c04a2faa286cb6b595fbeb", "Name": "GameState" },
-                "Id": "cb7beaf91599441aa3275fdd535fc45a",
-                "Name": "Initialize",
-                "Value": 0
-            }
+            "playerSpeed": 5,
+            "playerMoveDistance": 8,
+            "playerRotationSpeed": 90
         }
     }
 }]

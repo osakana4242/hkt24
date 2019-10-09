@@ -1,0 +1,29 @@
+﻿[{
+    "$TypeId": 3,
+    "Id": "be6ec8d70f3f4b03875ae6af1c40e840",
+    "Name": "PlyaerBody",
+    "ExportFlags": 0,
+    "Unlisted": false,
+    "Visibility": 0,
+    "TypeCode": "Component",
+    "Fields": [{
+        "Id": "4eabcc6652e34a91914cec6cc85c596a",
+        "Name": "index",
+        "FieldType": { "Id": "27c155635ccb4ab2bcb79ef5aaf129ec", "Name": "Int8" },
+        "Array": false,
+        "Visibility": 0,
+        "EditorOnly": false,
+        "Versioned": true
+    }, {
+        "Id": "e8993c6ecbf64f9a92f264a1eb3b5cac",
+        "Name": "targetPosition",
+        "FieldType": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
+        "Array": false,
+        "Visibility": 0,
+        "EditorOnly": false,
+        "Versioned": true
+    }],
+    "DefaultValue": {
+        "Type": { "Id": "be6ec8d70f3f4b03875ae6af1c40e840", "Name": "PlyaerBody" }
+    }
+}]
