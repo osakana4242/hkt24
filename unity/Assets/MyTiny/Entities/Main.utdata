@@ -1,0 +1,194 @@
+﻿[{
+    "$TypeId": 4,
+    "Id": "54420e4bb1974bbb8883cb5ac17ac370",
+    "Name": "Main",
+    "ExportFlags": 0,
+    "SerializedVersion": 0,
+    "Entities": [
+        { "$TypeId": 9, "Id": "0783c124f7bc4ab181b7ed589fe9e71c", "Name": "Camera" },
+        { "$TypeId": 9, "Id": "ccf832daa0444cc58de096f321985db3", "Name": "bg" },
+        { "$TypeId": 9, "Id": "982cf5fe53004266b053ea1e2b3bfe5c", "Name": "hud" },
+        { "$TypeId": 9, "Id": "7f4b18c7be13415aa10490bde8f04e75", "Name": "centerTelop" }
+    ]
+},
+{
+    "$TypeId": 5,
+    "Id": "0783c124f7bc4ab181b7ed589fe9e71c",
+    "Name": "Camera",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [{
+        "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" }
+    }, {
+        "Type": { "Id": "12692383f3fef3bb74c209888c5b0939", "Name": "Camera2D" },
+        "Properties": {
+            "halfVerticalSize": 160,
+            "rect": {
+                "Type": { "Id": "f216da154c4054842adb590807e977ba", "Name": "Rect" },
+                "Properties": {
+                    "x": 0,
+                    "y": 0,
+                    "width": 1,
+                    "height": 1
+                }
+            },
+            "backgroundColor": {
+                "Type": { "Id": "2a90a1633d6dc16cd37cdfaca7b93cea", "Name": "Color" },
+                "Properties": {
+                    "r": 0.5754717,
+                    "g": 0.2958793,
+                    "b": 0.2958793,
+                    "a": 1
+                }
+            },
+            "clearFlags": {
+                "$TypeId": 8,
+                "Type": { "Id": "76a06ddd38e99125d930e77c6a287872", "Name": "CameraClearFlags" },
+                "Id": "9faedc246f34513076701ef66b5ad74f",
+                "Name": "SolidColor",
+                "Value": 1
+            },
+            "depth": 0
+        }
+    }, {
+        "Type": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
+        "Properties": {
+            "position": {
+                "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
+                "Properties": {
+                    "y": 0
+                }
+            }
+        }
+    }]
+},
+{
+    "$TypeId": 5,
+    "Id": "ccf832daa0444cc58de096f321985db3",
+    "Name": "bg",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [{
+        "Type": { "Id": "1c504a8a7963db0d32e89b527b90e057", "Name": "Sprite2DRenderer" },
+        "Properties": {
+            "color": {
+                "Type": { "Id": "2a90a1633d6dc16cd37cdfaca7b93cea", "Name": "Color" },
+                "Properties": {
+                    "r": 0,
+                    "g": 0,
+                    "b": 0,
+                    "a": 1
+                }
+            }
+        }
+    }, {
+        "Type": { "Id": "be2f221c9af74ec5c0a4495a2d6769a3", "Name": "Sprite2DRendererOptions" },
+        "Properties": {
+            "size": {
+                "Type": { "Id": "3abb69286ddfc2d1c617a173c1eeb35d", "Name": "Vector2" },
+                "Properties": {
+                    "x": 240,
+                    "y": 320
+                }
+            }
+        }
+    }, {
+        "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" }
+    }]
+},
+{
+    "$TypeId": 5,
+    "Id": "982cf5fe53004266b053ea1e2b3bfe5c",
+    "Name": "hud",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [{
+        "Type": { "Id": "617fd26299c944d58b61164e0c9c9353", "Name": "Text2DRenderer" },
+        "Properties": {
+            "style": { "$TypeId": 9, "Id": "982cf5fe53004266b053ea1e2b3bfe5c", "Name": "hud" },
+            "text": "unko\n\nunko\n\nunko",
+            "pivot": {
+                "Type": { "Id": "3abb69286ddfc2d1c617a173c1eeb35d", "Name": "Vector2" },
+                "Properties": {
+                    "x": 0,
+                    "y": 1
+                }
+            }
+        }
+    }, {
+        "Type": { "Id": "ced0260f12f72499bae7fea4e1df92b7", "Name": "Text2DStyle" },
+        "Properties": {
+            "size": 12
+        }
+    }, {
+        "Type": { "Id": "ebf6e4be1bc00e559ef91e165189cb3e", "Name": "Text2DStyleNativeFont" },
+        "Properties": {
+            "font": { "$TypeId": 9, "Id": "982cf5fe53004266b053ea1e2b3bfe5c", "Name": "hud" }
+        }
+    }, {
+        "Type": { "Id": "6f5ed9937f81d1780663edc21a6f0da2", "Name": "NativeFont" }
+    }, {
+        "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" }
+    }, {
+        "Type": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
+        "Properties": {
+            "position": {
+                "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
+                "Properties": {
+                    "x": -109.7,
+                    "y": 154
+                }
+            }
+        }
+    }]
+},
+{
+    "$TypeId": 5,
+    "Id": "7f4b18c7be13415aa10490bde8f04e75",
+    "Name": "centerTelop",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [{
+        "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" }
+    }, {
+        "Type": { "Id": "617fd26299c944d58b61164e0c9c9353", "Name": "Text2DRenderer" },
+        "Properties": {
+            "style": { "$TypeId": 9, "Id": "7f4b18c7be13415aa10490bde8f04e75", "Name": "hud" },
+            "text": "START",
+            "pivot": {
+                "Type": { "Id": "3abb69286ddfc2d1c617a173c1eeb35d", "Name": "Vector2" },
+                "Properties": {
+                    "x": 0.5,
+                    "y": 0.5
+                }
+            }
+        }
+    }, {
+        "Type": { "Id": "ced0260f12f72499bae7fea4e1df92b7", "Name": "Text2DStyle" },
+        "Properties": {
+            "size": 12
+        }
+    }, {
+        "Type": { "Id": "ebf6e4be1bc00e559ef91e165189cb3e", "Name": "Text2DStyleNativeFont" },
+        "Properties": {
+            "font": { "$TypeId": 9, "Id": "7f4b18c7be13415aa10490bde8f04e75", "Name": "hud" }
+        }
+    }, {
+        "Type": { "Id": "6f5ed9937f81d1780663edc21a6f0da2", "Name": "NativeFont" }
+    }, {
+        "Type": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
+        "Properties": {
+            "position": {
+                "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
+                "Properties": {
+                    "x": 0,
+                    "y": 0
+                }
+            }
+        }
+    }]
+}]

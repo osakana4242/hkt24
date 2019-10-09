@@ -1,0 +1,46 @@
+﻿[{
+    "$TypeId": 3,
+    "Id": "164f88b61df14b9bb69ebb3ea39ec2d8",
+    "Name": "GameConfig",
+    "ExportFlags": 0,
+    "Unlisted": false,
+    "Visibility": 0,
+    "TypeCode": "Configuration",
+    "Fields": [{
+        "Id": "e0bc6109702f4753b61df5c700d65738",
+        "Name": "state",
+        "FieldType": { "Id": "27fe569d06c04a2faa286cb6b595fbeb", "Name": "GameState" },
+        "Array": false,
+        "Visibility": 0,
+        "EditorOnly": false,
+        "Versioned": true
+    }, {
+        "Id": "cf8eb225f5a84d1b983a11807e4246fb",
+        "Name": "resultType",
+        "FieldType": { "Id": "33b78a31f3e74b488182203b1c9a2e4b", "Name": "ResultType" },
+        "Array": false,
+        "Visibility": 0,
+        "EditorOnly": false,
+        "Versioned": true
+    }, {
+        "Id": "fdc07415b710417fb9a9c8c227198288",
+        "Name": "elapsedTime",
+        "FieldType": { "Id": "67325dccf2f047c19c7ef4a045354e67", "Name": "Float32" },
+        "Array": false,
+        "Visibility": 0,
+        "EditorOnly": false,
+        "Versioned": true
+    }],
+    "DefaultValue": {
+        "Type": { "Id": "164f88b61df14b9bb69ebb3ea39ec2d8", "Name": "GameConfig" },
+        "Properties": {
+            "state": {
+                "$TypeId": 8,
+                "Type": { "Id": "27fe569d06c04a2faa286cb6b595fbeb", "Name": "GameState" },
+                "Id": "cb7beaf91599441aa3275fdd535fc45a",
+                "Name": "Initialize",
+                "Value": 0
+            }
+        }
+    }
+}]

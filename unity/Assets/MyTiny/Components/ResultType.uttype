@@ -1,0 +1,42 @@
+﻿[{
+    "$TypeId": 3,
+    "Id": "33b78a31f3e74b488182203b1c9a2e4b",
+    "Name": "ResultType",
+    "ExportFlags": 0,
+    "Unlisted": false,
+    "Visibility": 0,
+    "TypeCode": "Enum",
+    "BaseType": { "Id": "9633c95a0a68473682f09ed6a01194b4", "Name": "Int32" },
+    "Fields": [{
+        "Id": "a6a2e8a46b1a4a9db5c736a068aaf6f1",
+        "Name": "None",
+        "FieldType": { "Id": "9633c95a0a68473682f09ed6a01194b4", "Name": "Int32" },
+        "Array": false,
+        "Visibility": 0,
+        "EditorOnly": false,
+        "Versioned": true
+    }, {
+        "Id": "d4d3c65c7f0b4c279eb13855fa1061ac",
+        "Name": "Goal",
+        "FieldType": { "Id": "9633c95a0a68473682f09ed6a01194b4", "Name": "Int32" },
+        "Array": false,
+        "Visibility": 0,
+        "EditorOnly": false,
+        "Versioned": true
+    }, {
+        "Id": "3b26272412a94fcf9ae1e013acc88ff7",
+        "Name": "Die",
+        "FieldType": { "Id": "9633c95a0a68473682f09ed6a01194b4", "Name": "Int32" },
+        "Array": false,
+        "Visibility": 0,
+        "EditorOnly": false,
+        "Versioned": true
+    }],
+    "DefaultValue": {
+        "Type": { "Id": "33b78a31f3e74b488182203b1c9a2e4b", "Name": "ResultType" },
+        "Properties": {
+            "Goal": 1,
+            "Die": 2
+        }
+    }
+}]

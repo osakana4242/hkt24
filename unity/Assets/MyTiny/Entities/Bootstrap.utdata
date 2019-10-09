@@ -1,0 +1,33 @@
+﻿[{
+    "$TypeId": 4,
+    "Id": "d16cc19517604ba9a3904825a78ad87c",
+    "Name": "Bootstrap",
+    "ExportFlags": 0,
+    "SerializedVersion": 0,
+    "Entities": [
+        { "$TypeId": 9, "Id": "583b80fa03af47ba91075d56ef5ecec8", "Name": "Entity" }
+    ]
+},
+{
+    "$TypeId": 5,
+    "Id": "583b80fa03af47ba91075d56ef5ecec8",
+    "Name": "Entity",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [{
+        "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" }
+    }, {
+        "Type": { "Id": "12692383f3fef3bb74c209888c5b0939", "Name": "Camera2D" },
+        "Properties": {
+            "halfVerticalSize": 160,
+            "clearFlags": {
+                "$TypeId": 8,
+                "Type": { "Id": "76a06ddd38e99125d930e77c6a287872", "Name": "CameraClearFlags" },
+                "Id": "9faedc246f34513076701ef66b5ad74f",
+                "Name": "SolidColor",
+                "Value": 1
+            }
+        }
+    }]
+}]
